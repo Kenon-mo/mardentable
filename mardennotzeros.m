@@ -36,6 +36,7 @@ function B = mardennotzeros(A)
         return;
     else
         B = [];
+        fprintf('\n |a0| < |ac| => |%f| < |%f| \n', Az_coeffs(length(Az_coeffs)), Az_coeffs(1))
         disp('---BRAK ROZWIĄZAŃ---')
         return;
     end
