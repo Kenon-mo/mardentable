@@ -34,6 +34,8 @@ function mardentable(A)
             n = 1;
 
             A = mardennotzeros(mardenArray{i});
+            % Chyba powinno wyjść odwrócone ale nie ręczę XD
+            A = mardenreverse(A);
             char = char + 1;
         end
 
