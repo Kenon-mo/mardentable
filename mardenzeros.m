@@ -25,7 +25,7 @@ function ZERO_FLAG = mardenzeros(mardenArray)
         return;
     end
 
-    if zero_found && checksum
+    if zero_found && checksum && mardenArray(1) == 0
         ZERO_FLAG = 2;
         return;
     end
