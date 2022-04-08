@@ -17,6 +17,7 @@ function mardentable(A)
 
         % Obliczanie kolejnej macierzy
         A = mardencalc(mardenArray, i);
+        %disp(A)
 
         % Warunki sprawdzające przypadki szczególne
         if mardenzeros(A) == 1
@@ -48,5 +49,4 @@ function mardentable(A)
         n = n + 1;
     end
 
-    %disp(mardenArray)
 end

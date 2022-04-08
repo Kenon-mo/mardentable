@@ -19,7 +19,9 @@ function B = mardennotzeros(A)
 
     A = mardenreverse(A);
 
+
     phi = (A(q + 1) - A(length(A) - q) * A(1) / A(length(A))) / A(1);
+
 
     % Obliczanie wilomianu B(z)
     Bz = poly2sym(A, z) * (z^q + 2 * (phi / abs(phi)));
@@ -36,6 +38,7 @@ function B = mardennotzeros(A)
         return;
     else
         B = [];
+        disp(expand(Az))
         fprintf('\n |a0| < |ac| => |%f| < |%f| \n', Az_coeffs(length(Az_coeffs)), Az_coeffs(1))
         disp('---BRAK ROZWIĄZAŃ---')
         return;

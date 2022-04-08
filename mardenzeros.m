@@ -17,17 +17,17 @@ function ZERO_FLAG = mardenzeros(mardenArray)
             zero_found = 1;
         end
 
-        checksum = checksum + el;
+        checksum = checksum + abs(el);
     end
 
-    if zero_found && ~checksum
+    if (zero_found && ~(checksum))
         ZERO_FLAG = 1;
         return;
-    end
-
-    if zero_found && checksum && mardenArray(1) == 0
+    elseif (zero_found && checksum && mardenArray(1) == 0)
         ZERO_FLAG = 2;
         return;
     end
+    %disp(mardenArray)
+
 
 end
