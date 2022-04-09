@@ -1,4 +1,4 @@
-# Super SPCiD skrypt
+# SPCiD skrypt
 Służy do liczenia tablic Mardena używa się za pomocą:
 ```
 mardentable(A)
