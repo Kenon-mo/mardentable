@@ -17,6 +17,9 @@ function mardentable(A)
 
         % Obliczanie kolejnej macierzy
         A = mardencalc(mardenArray, i);
+        
+        % Jeśli w macierzy jest coś poniżej ustalonego numerycznego zera to
+        % wstaw tam zero
         A = mardennumeric(A, 1e-9);
         %disp(A)
 
