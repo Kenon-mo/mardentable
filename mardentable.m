@@ -17,6 +17,7 @@ function mardentable(A)
 
         % Obliczanie kolejnej macierzy
         A = mardencalc(mardenArray, i);
+        A = mardennumeric(A, 1e-9);
         %disp(A)
 
         % Warunki sprawdzające przypadki szczególne
